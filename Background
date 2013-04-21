@@ -1,0 +1,36 @@
+import java.awt.Dimension;
+import java.awt.FlowLayout;
+import java.awt.Graphics;
+import java.awt.Image;
+import java.io.IOException;
+
+import javax.swing.ImageIcon;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+
+public class Background extends JFrame {
+  private ImageIcon image1;
+	private JLabel label1;
+	private ImageIcon image2;
+	private JLabel label2;
+	
+	Background(){
+		setLayout(new FlowLayout());
+		
+		//image1 = new ImageIcon(getClass().getResource("minecraft_way_of_live_wallpaper_by_lpzdesign-d5zljxf.jpg"));
+		label1 = new JLabel(image1);
+		
+		add(label1);
+
+	}
+
+	
+	public static void main (String args[]) {
+		Background gui = new Background();
+		JFrame myFrame=new JFrame("minecraft_way_of_live_wallpaper_by_lpzdesign-d5zljxf.jpg");
+		gui.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		gui.setVisible(true);
+		gui.pack();
+	}
+}
