@@ -1,2 +1,3 @@
 CustomLauncher
+All rights reserved.
 ==============
